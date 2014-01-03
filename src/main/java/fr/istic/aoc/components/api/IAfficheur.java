@@ -1,24 +1,32 @@
 package fr.istic.aoc.components.api;
 
+/**
+ * 
+ * @author jimmy & Anthony
+ * Classe représentant l'afficheur de l'application, 
+ */
 public interface IAfficheur {
 	
+	/**
+	 * deux LEDS, une pour le tempo, une pour la mesure
+	 */
 	public static final int TEMPO = 0;
 	public static final int MEASURE = 1;
 
 	/**
-	 * Turns ON the LED represented by the given id
-	 * @param id a LED id
+	 * allule la led 
+	 * @param id l'id de la led
 	 */
 	void allumerLed(int id);
 	
 	/**
-	 * Turns OFF the LED represented by the given id
-	 * @param id a LED id
+	 * eteinds la led 
+	 * @param id l'id de la LED
 	 */
 	void eteindreLed(int id);
 	
 	/**
-	 * Prints the given integer on the hardware's display
+	 * affiche le tempo courant
 	 */
 	void afficherTempo(int value);
 }

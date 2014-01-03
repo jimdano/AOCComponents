@@ -1,9 +1,14 @@
 package fr.istic.aoc.components.api;
 
+/**
+ * 
+ * @author jimmy & Anthony
+ * Classe qui implémente la fonction activée à la mesure, emet un son
+ */
 public interface IEmetteurSonore {
 
 	/**
-	 * Emit a clicking sound
+	 * Emet un son
 	 */
 	void emettreClick();
 }
